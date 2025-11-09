@@ -77,7 +77,7 @@ class Checker:
                         print(
                         f"    [ {self.grn}$ {self.white}]{self.grn} Username Available {self.blue}{username}{self.white} Hits ~ {self.hits} : Fails ~ {self.fails} : Rates ~ {self.rates} : Time ~ {self.time}"
                     )
-                        print(username, file=open("available.txt", "a"))
+                        print(username, file=open("tiktok.txt", "a"))
                         self.hits += 1
                     else:
                         self.fails += 1
@@ -88,7 +88,7 @@ class Checker:
                     print(
                         f"    [ {self.grn}$ {self.white}]{self.grn} Available/Banned {self.blue}{username}{self.white} Hits ~ {self.hits} : Fails ~ {self.fails} : Rates ~ {self.rates} : Time ~ {self.time}"
                     )
-                    print(username, file=open("available.txt", "a"))
+                    print(username, file=open("tiktok.txt", "a"))
                     self.hits += 1
 
                 elif response.status_code == 429:
